@@ -1,0 +1,24 @@
+.boxed {
+	border: 1px solid black;
+}
+
+body {
+  text-align: center;
+  background-color: #80ffff;
+}
+
+.t1
+{
+    display: inline-block;
+    background-color: #64dff4;
+}
+
+.t2
+{
+    background-color: #2dbedd;
+}
+
+.t3
+{
+    border: 1px solid white;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Client's home</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/style1.css" />
+<script src="utils.js" charset="utf-8" defer></script>
+<script src="clientManagement.js" charset="utf-8" defer></script>
+</head>
+<body>
+	<div align="right">
+		<a href="Logout">Logout</a>
+	</div>
+
+	<h1>Welcome to the Client's Home Page</h1>
+	<p>Nice to see you again <span id="id_username"></span></p>
+	<div id="id_alert" class="alertmessage"></div>
+	<table class="t1">
+		<tr>
+			<th align="left"><h3>These are the estimates that you
+					created</h3></th>
+		</tr>
+		<tr>
+			<td><table id="id_estimatecontainer" class="t2">
+					<thead>
+						<tr>
+							<th>Estimate Id</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody id="id_estimatecontainerbody">
+					</tbody>
+				</table></td>
+			<td>
+				<table id="id_estimatedetailstable" class="t2">
+					<tr>
+						<th colspan="2"><h3>Estimate Details</h3></th>
+					</tr>
+					<tr>
+						<td><table id="id_detailcontainer" class="t3">
+								<thead>
+									<tr>
+										<th>Product</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td id="id_product"></td>
+										<td id="id_price"></td>
+									</tr>
+								</tbody>
+							</table></td>
+						<td><table id="id_optioncontainer" class="t3">
+								<thead>
+									<tr>
+										<th>Option Name</th>
+										<th>Type</th>
+									</tr>
+								</thead>
+								<tbody id="id_optioncontainerbody">
+								</tbody>
+							</table></td>
+					</tr>
+				</table>
+			</td>
+		<tr>
+			<th align="left"><h3>Here you can request an estimate, first choose a product</h3></th>
+		</tr>
+		<tr>
+			<td><table id="id_productcontainer" class="t2">
+					<thead>
+						<tr>
+							<th>Product Id</th>
+							<th>Name</th>
+							<th>Image</th>
+							<th>Options</th>
+						</tr>
+					</thead>
+					<tbody id="id_productcontainerbody">
+					</tbody>
+				</table></td>
+			<td align="center">
+				<table id="id_createtable" class="t2">
+					<tr>
+						<th colspan="2"><h3>Create Estimate</h3></th>
+					</tr>
+					<tr>
+						<td>
+							<form id="id_createform" action="#" class="t3">
+								<table id="id_createcontainer">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Type</th>
+											<th>Check</th>
+										</tr>
+									</thead>
+									<tbody id="id_createcontainerbody">
+									</tbody>
+								</table>
+								<input type="hidden" name="productid"> <input
+									type="button" name="Create Estimate" value="Send estimate">
+							</form>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
