@@ -1,5 +1,5 @@
 {
-
+	//comment
 	// page components
 	let estimateList, estimateDetails, productList, estimateOptions, createEstimate,
 		pageOrchestrator = new PageOrchestrator(); // main controller
